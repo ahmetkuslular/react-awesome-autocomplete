@@ -1,0 +1,38 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "prettier"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "prettier",
+        "simple-import-sort"
+    ],
+    "ignorePatterns": ["**/*.js"],
+    "rules": {
+        "camelcase": "error",
+        "no-duplicate-imports": "error",
+        "react/react-in-jsx-scope":"off",
+        "no-console": "error",
+        "no-alert": "error",
+        "react-hooks/exhaustive-deps": "off",
+        "react/prop-types": 0,
+        "react/display-name": 0,
+        "simple-import-sort/imports": "error",
+        "simple-import-sort/exports": "error",
+        "react/no-unknown-property":"off",
+        "react/no-unescaped-entities ":"off"
+    }
+}
